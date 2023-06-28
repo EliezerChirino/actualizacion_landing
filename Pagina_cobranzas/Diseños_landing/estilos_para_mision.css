@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Sora:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Sora:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Play&family=Sora:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Play&family=Sora:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header{
+    font-family: 'Play', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 5;
+    left: 5;
+    width: 100%;
+    background: white;
+    border-bottom: solid 3px #D50000;
+    z-index: 2;
+    transition: background ease-in-out 0.2s;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor_elementos{
+    margin-right: -70px;
+    padding: 10px 60px 10px 60px;
+}
+.contenedor_elementos ul {
+    list-style: none; 
+    padding: 0; 
+  }
+
+.contenedor_elementos li{
+    display: inline-block;
+    margin-top: 15px;
+}
+.logo img{
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.contenedor_elementos a{
+    font-size: 17px;
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+  
+  .contenedor_elementos a::before {
+    margin-left: auto;
+  }
+  
+  .contenedor_elementos a::after, .contenedor_elementos a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #D50000;
+    display: block;
+    transition: 0.5s;
+    
+  }
+  
+  .contenedor_elementos a:hover::after, .contenedor_elementos a:hover::before {
+    width: 100%;
+  }
+.elementos_interac ul {
+    list-style: none; 
+    padding: 0; 
+}
+.elementos_interac li{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.boton:link,
+.boton:visited {
+ text-transform: uppercase;
+ text-decoration: none;
+ color: white;
+ padding: 10px 30px;
+ border-radius: 1000px;
+ display: inline-block;
+ transition: all .2s;
+ position: relative;
+ background-color: #D50000;
+}
+
+.boton:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.boton:active {
+ transform: translateY(-3px);
+}
+
+.boton::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ top: 0;
+ left: 0;
+ position: absolute;
+ z-index: -1;
+ transition: all .3s;
+}
+
+.boton:hover::after {
+ background-color: rgb(22, 22, 22);
+ transform: scaleX(1.4) scaleY(1.5);
+ opacity: 0;
+}
+
+.elementos_interac a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px 0px 20px;
+}
+.elementos_interac{
+    font-family: 'Sora', sans-serif;
+    padding: 10px 60px 10px 60px; 
+}/*------------------Hasta aqui el Nav--------------------*/
+
+section#section1_landing_QuienesSomo {/*---------------Aqui empieza la section 1 de "¿Quienes somos?"-------------------*/
+
+    background: #ffffff;
+    top:0;
+    right: 0;
+    left: 0;
+
+}
+section .contain{
+
+    color: aliceblue;
+    background-color: #3b3b3b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    left: 0; 
+    height: 300px;
+
+}/*-------------------------------Cierre del section 1 de "¿Quienes somos?"-----------------------*/
+
+section#section2_landing_QuienesSomos{/*-------------Comienzo del section 2 del landing de "¿Quienes somos?"-----------------------*/
+    padding: 5px 50px 20px 50px;
+    margin: 0;
+
+}
+
+.imagen_vision img{
+    height: 500px;
+    width: 420px;
+    border-radius: 10px;
+}
+
+.card {
+    height: auto;
+    background: white;
+    border: none;
+
+}
+
+.card .contenido{
+    margin-left: -30px;
+    padding: 0px 50px 10px 50px;
+}
+.card .contenido h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bolder;
+}
+
+.card .contenido p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+
+@media (max-width:990px){
+    #section2_landing_QuienesSomos .row{
+        display: flex;
+        justify-content: center;
+    }
+    .imagen_vision{
+        display: flex;
+        justify-content: center;
+    }
+}/*--------------Hasta aqui el section 2 del landing de "¿Quienes somos?"----------------------*/
+
+section#section3_landing_QuienesSomos .contenedor .row{ /*---------Aqui empieza el section 3 de  de "¿Quienes somos?"-----------------*/
+    padding: 10px 65px 10px 65px;
+}
+#section3_landing_QuienesSomos .mision{
+    background-color: #3b3b3b;
+    text-align: center;
+    border-right: solid 5px #D50000;
+    padding: 10px 30px 10px 30px;
+}
+
+@media (max-width:990px){
+    #section3_landing_QuienesSomos .mision{
+        border: none;
+    }
+    
+}
+#section3_landing_QuienesSomos .mision h2{
+    font-family: 'Bebas Neue', sans-serif;
+}
+#section3_landing_QuienesSomos .mision p{
+text-align: justify;
+}
+#section3_landing_QuienesSomos .vision{
+    background-color: #d1d1d6;
+    text-align: center;
+    border-left: solid 5px #d1d1d6;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px 10px 30px;
+
+
+}
+#section3_landing_QuienesSomos .vision h2{
+    font-family: 'Bebas Neue', sans-serif;
+}
+#section3_landing_QuienesSomos .vision p{
+ text-align: center;
+
+ 
+}/*----------------------Aqui termina el section 3 del landing de ¿Quienes somos?-------------------*/
+
+section#section4_landing_QuienesSomos{/*---------Aqui empieza la section 4 del landing de ¿Quienes somos?----------------*/
+padding: 10px 30px 0px 52px;
+
+}
+
+#section4_landing_QuienesSomos .contenido {
+    padding-top: 20px;
+    text-align: justify;
+    
+}
+.calidad{
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    background: #fdfdff;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    position: relative;
+}
+
+.calidad.mas{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #3b3b3b;
+    color:#cacdd2
+}
+#section4_landing_QuienesSomos .contenido h2{
+    font-family: 'Bebas Neue', sans-serif;
+    
+}
+#section4_landing_QuienesSomos .contenido h4{
+    font-family: 'Bebas Neue', sans-serif;
+    
+}
+
+#section4_landing_QuienesSomos .contenido p{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#section4_landing_QuienesSomos .contenedor_s4 .imagen {
+    margin-top: 22px;
+    margin-left: -10px;
+    border-radius: 10px;
+}
+#section4_landing_QuienesSomos .contenedor_s4 .imagen img {
+    height: 30rem;
+    border-radius: 10px;
+}
+@media(max-width: 480px){
+    .imagen img{
+        margin-left: -23px;
+    }
+}/*---------------------Aqui termina el section 4 del landing de ¿Quienes somos?------------------------*/
+
+#section5_landing_QuienesSomos {
+    padding: 20px 50px 20px 50px;
+}
+
+
+.marcas_quienesSomos {
+    width: 100%;
+    background-color: #797676;
+    border-radius: 16px;
+    margin-top: 0 !important;
+
+  }
+
+  .block1 {
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+
+
+  }
+
+  .block1 img{
+    width: 100%;
+    height: 75%;
+  }
+  .block2 {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .block3{
+    height: 205px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .block3 div{
+    border-radius: 16px;
+    width: 260px;
+  }
+
+  .block2 div{
+    margin-top: 0px !important;
+    height:50px;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .montana{
+    background: transparent;
+    color: #000;
+    margin-top: 10PX;
+  }
+
+
+.logo_Pmontana, .sub_titulo,  .block1{
+
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+    40%, #e5e5e5 48%);
+    margin-top: 10px;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load89234 2s infinite;
+    color: #262626;
+    font-weight: bold;
+    font-size: 15px;
+}
+  
+  @keyframes load89234 {
+    100% {
+      background-position: -100% 0;
+    }
+  }
+
+
+
+
+Footer{/*-----------------Aqui empieza el footer----------------------*/
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    color: #fff;
+    margin-bottom: 0 !important;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content ul li a{
+color: #b10505;
+}
+
+.footer-content ul li a:hover{
+    color: cadetblue
+    }
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 2px;
+    text-align: center;
+}
+
+
+ @media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+}
+/*Termina el Footer*/
